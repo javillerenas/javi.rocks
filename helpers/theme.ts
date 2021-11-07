@@ -1,5 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
 
+const FONT =
+  "JetBrains Mono, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;";
+
 const colors = {
   brand: {
     blue: '#0073DC',
@@ -11,4 +14,8 @@ const colors = {
   },
 };
 
-export const theme = extendTheme({ colors });
+const fonts = {
+  body: FONT,
+};
+
+export const theme = extendTheme({ colors, fonts });

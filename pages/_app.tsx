@@ -3,6 +3,8 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 /** helpers */
 import { theme } from 'helpers/theme';
+/** styles */
+import 'styles/global.css'
 
 import type { AppProps } from 'next/app';
 
