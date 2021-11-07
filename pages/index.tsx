@@ -10,13 +10,13 @@ const Home: NextPage = () => (
     <Head>
       <title>Javi Llerenas | Software engineer and designer.</title>
       <meta
-        name='description'
-        content='Personal page of Javier Llerenas, a software engineer and designer'
+        name="description"
+        content="Personal page of Javier Llerenas, a software engineer and designer"
       />
-      <link rel='icon' href='/favicon.ico' />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Box as='main'>Content</Box>
+    <Box as="main">Content</Box>
 
     <Footer />
   </Box>
