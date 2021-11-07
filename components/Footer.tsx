@@ -13,6 +13,7 @@ import Cat from '../public/images/cat.webp';
 
 const FOOTER_HEIGHT = 50;
 const FOOTER_MAX_WIDTH = 800;
+const FOOTER_PADDING = 10;
 
 const LINKS = [
   {
@@ -41,7 +42,7 @@ export const Footer: FC = () => (
       justify="space-between"
       maxWidth={FOOTER_MAX_WIDTH}
       width="100%"
-      px="5"
+      px={FOOTER_PADDING}
     >
       <Text fontSize="xss" color="brand.greyDarker">
         Made with 🔥
@@ -53,8 +54,8 @@ export const Footer: FC = () => (
           </ExternalLink>
         ))}
       </HStack>
-      <Box>
-        <Box width="125px" position="relative" top="-67px">
+      <Box width="10px">
+        <Box width="125px" position="relative" top="-67px" right="100px">
           <Image src={Cat} />
         </Box>
       </Box>

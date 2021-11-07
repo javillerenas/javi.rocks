@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 // components
 import { Footer } from 'components/Footer';
+import { Header } from 'components/Header';
 
 const Home: NextPage = () => (
   <Box>
@@ -16,8 +17,8 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Box as="main">Content</Box>
-
+    <Header />
+    <Box as="main" height="700px">Content</Box>
     <Footer />
   </Box>
 );
