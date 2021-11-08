@@ -86,5 +86,5 @@ export const Hero: FC = () => {
 };
 
 const HeroText: FC<TextProps> = (props) => (
-  <Text color="brand.grey" {...props} />
+  <Text color="brand.grey" fontWeight="medium" {...props} />
 );

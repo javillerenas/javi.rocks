@@ -25,7 +25,7 @@ export const Header: FC = () => (
   <Section as="header" minHeight={HEADER_HEIGHT} py="6">
     <HStack spacing="2">
       <Icon name={IconName.logo} boxSize="9" />
-      <Text fontSize="30px" fontWeight="medium" color="brand.white">
+      <Text fontSize="30px" fontWeight="bold" color="brand.white">
         javi.
       </Text>
     </HStack>
