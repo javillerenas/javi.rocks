@@ -30,8 +30,14 @@ interface SocialIcons {
 export const SocialIcons: FC<SocialIcons> = ({ iconSizes = 4 }) => (
   <HStack spacing="3">
     {LINKS.map(({ iconName, url }) => (
-      <ExternalLink key={url} href={url} hideExternalIcon>
-        <Icon boxSize={iconSizes} color="brand.greyDarker" name={iconName} />
+      <ExternalLink key={url} href={url} borderRadius="5px" hideExternalIcon>
+        <Icon
+          boxSize={iconSizes}
+          color="brand.greyDarker"
+          name={iconName}
+          transition="0.1s ease"
+          _hover={{ color: 'brand.grey' }}
+        />
       </ExternalLink>
     ))}
   </HStack>
