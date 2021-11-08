@@ -27,4 +27,12 @@ const fontSizes = {
   xsss: '0.25rem',
 };
 
-export const theme = extendTheme({ colors, fonts, fontSizes });
+const styles = {
+  global: {
+    body: {
+      bg: '#111618',
+    },
+  },
+};
+
+export const theme = extendTheme({ colors, fonts, fontSizes, styles });

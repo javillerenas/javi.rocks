@@ -7,7 +7,7 @@ import { Footer } from 'components/Footer';
 import { Header } from 'components/Header';
 
 const Home: NextPage = () => (
-  <Box>
+  <>
     <Head>
       <title>Javi Llerenas | Software engineer and designer.</title>
       <meta
@@ -22,7 +22,7 @@ const Home: NextPage = () => (
       Content
     </Box>
     <Footer />
-  </Box>
+  </>
 );
 
 export default Home;
