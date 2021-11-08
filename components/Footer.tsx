@@ -12,7 +12,7 @@ import { TWITTER_URL, LINKEDIN_URL, GITHUB_URL } from 'helpers/constants';
 import Cat from '../public/images/cat.webp';
 
 const FOOTER_HEIGHT = 50;
-const FOOTER_MAX_WIDTH = 800;
+const FOOTER_MAX_WIDTH = 1200;
 const FOOTER_PADDING = 10;
 
 const LINKS = [
@@ -44,13 +44,13 @@ export const Footer: FC = () => (
       width="100%"
       px={FOOTER_PADDING}
     >
-      <Text fontSize="xss" color="brand.greyDarker">
+      <Text fontSize="sm" color="brand.greyDarker">
         Made with 🔥
       </Text>
       <HStack spacing="3">
         {LINKS.map(({ iconName, url }) => (
-          <ExternalLink href={url} hideExternalIcon>
-            <Icon boxSize="3" color="brand.greyDarker" name={iconName} />
+          <ExternalLink key={url} href={url} hideExternalIcon>
+            <Icon boxSize="4" color="brand.greyDarker" name={iconName} />
           </ExternalLink>
         ))}
       </HStack>

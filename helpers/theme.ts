@@ -13,6 +13,8 @@ const colors = {
     greyDarker: '#585858',
     white: '#F3F3F3',
     whiteSecondary: '#DADADA',
+    background: '#111618',
+    heroBackground: '#191B21',
   },
 };
 

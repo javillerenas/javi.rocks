@@ -1,6 +1,6 @@
-import { Box } from '@chakra-ui/layout';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Box } from '@chakra-ui/layout';
 
 // components
 import { Footer } from 'components/Footer';
@@ -18,7 +18,9 @@ const Home: NextPage = () => (
     </Head>
 
     <Header />
-    <Box as="main" height="700px">Content</Box>
+    <Box as="main" height="700px">
+      Content
+    </Box>
     <Footer />
   </Box>
 );
