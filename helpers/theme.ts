@@ -5,13 +5,16 @@ const FONT =
 
 const colors = {
   brand: {
-    blue: '#0073DC',
+    blue: '#0085FF',
     blueLight: '#06BDF9',
     black: '#303030',
     blackSecondary: '#1F1F1F',
     grey: '#B2B2B2',
     greyDarker: '#585858',
     white: '#F3F3F3',
+    pink: '#FF9D9D',
+    green: '#38FFAC',
+    yellow: '#FFD335',
     whiteSecondary: '#DADADA',
     background: '#111618',
     heroBackground: '#191B21',
@@ -20,11 +23,15 @@ const colors = {
 
 const fonts = {
   body: FONT,
+  heading: FONT,
 };
 
 const fontSizes = {
   xss: '0.5rem',
   xsss: '0.25rem',
+  '2xl': '40px',
+  '4xl': '80px',
+  '5xl': '96px',
 };
 
 const styles = {
