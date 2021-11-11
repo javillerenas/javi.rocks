@@ -12,13 +12,18 @@ import Cat from '../public/images/cat.webp';
 const FOOTER_HEIGHT = 50;
 
 export const Footer: FC = () => (
-  <Section as="footer" maxHeight={FOOTER_HEIGHT} bg="brand.blackSecondary">
+  <Section
+    as="footer"
+    maxHeight={FOOTER_HEIGHT}
+    bg="brand.blackSecondary"
+    mt="0"
+  >
     <Text fontSize="sm" color="brand.greyDarker">
       Made with 🔥
     </Text>
     <SocialIcons />
-    <Box width="0px">
-      <Box width="125px" position="relative" top="-67px" right="120px">
+    <Box width="0px" height={FOOTER_HEIGHT}>
+      <Box width="125px" position="relative" top="-94px" right="120px">
         <Image src={Cat} />
       </Box>
     </Box>

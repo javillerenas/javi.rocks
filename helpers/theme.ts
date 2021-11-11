@@ -18,6 +18,8 @@ const colors = {
     whiteSecondary: '#DADADA',
     background: '#111618',
     heroBackground: '#191B21',
+    // gradients
+    blueGradient: 'linear-gradient(225deg, #0085FF 0%, #3476D9 100%);',
   },
 };
 

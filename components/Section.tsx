@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Flex, FlexProps } from '@chakra-ui/layout';
 
-const SECTION_MAX_WIDTH = 1200;
+const SECTION_MAX_WIDTH = 1000;
 const SECTION_PADDING = 10;
 
 export const Section: FC<FlexProps> = ({
@@ -17,6 +17,7 @@ export const Section: FC<FlexProps> = ({
       maxWidth={SECTION_MAX_WIDTH}
       width="100%"
       px={SECTION_PADDING}
+      mt="50px"
       {...props}
     >
       {children}
