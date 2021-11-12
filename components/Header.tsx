@@ -9,12 +9,16 @@ import { Section } from 'components/Section';
 import { Icon, IconName } from 'components/Icon';
 import { InternalLink } from 'components/InternalLink';
 
-const HEADER_HEIGHT = 50;
+const HEADER_HEIGHT = 30;
 
 const LINKS = [
   {
     text: 'home',
     url: '/',
+  },
+  {
+    text: 'gamedev',
+    url: '/game-dev',
   },
 ];
 
@@ -22,7 +26,7 @@ export const Header: FC = () => {
   const { pathname } = useRouter();
 
   return (
-    <Section as="header" minHeight={HEADER_HEIGHT} py="6" mt="0">
+    <Section as="header" minHeight={HEADER_HEIGHT} py="10px" mt="0">
       <HStack spacing="1">
         {LINKS.map(({ url, text }) => {
           const isActive = url === pathname;
@@ -40,10 +44,10 @@ export const Header: FC = () => {
         })}
       </HStack>
       <HStack spacing="0">
-        <Text fontSize="30px" fontWeight="bold" color="brand.whiteSecondary">
+        <Text fontSize="25px" fontWeight="bold" color="brand.whiteSecondary">
           javi
         </Text>
-        <Icon name={IconName.logo} boxSize="8" />
+        <Icon name={IconName.logo} boxSize="7" />
       </HStack>
     </Section>
   );

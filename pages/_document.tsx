@@ -37,6 +37,7 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

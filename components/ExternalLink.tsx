@@ -6,7 +6,7 @@ import {
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 interface ExternalLink extends ChakraLinkProps {
-  hideExternalIcon: boolean;
+  hideExternalIcon?: boolean;
 }
 
 export const ExternalLink: FC<ExternalLink> = ({
@@ -14,7 +14,7 @@ export const ExternalLink: FC<ExternalLink> = ({
   hideExternalIcon = false,
   ...props
 }) => (
-  <ChakraLink {...props} isExternal>
+  <ChakraLink color="brand.blueLight" {...props} isExternal>
     {children}
     {!hideExternalIcon && <ExternalLinkIcon mx="2px" />}
   </ChakraLink>
