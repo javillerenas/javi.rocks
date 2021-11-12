@@ -11,7 +11,7 @@ const POSITIONS = [
     text: (
       <>
         Currently working as a <b>software engineer</b> in the Seller Products
-        team helping make the user experience amazing. We're disrupting the
+        team helping make the user experience amazing. We’re disrupting the
         commercial real estate market 🔥
       </>
     ),

@@ -13,7 +13,7 @@ export const CocoSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
     <Title as="h1">coco 🐶</Title>
     <Text color="brand.grey">
-      I'm a proud pup-dad of a beautiful malti-poo called Coco
+      I’m a proud pup-dad of a beautiful malti-poo called Coco
     </Text>
     <Box
       mt="40px"
@@ -24,7 +24,7 @@ export const CocoSection: FC = () => (
         },
       }}
     >
-      <Image src={Coco} />
+      <Image alt="My beautiful malti-poo, Coco" src={Coco} />
     </Box>
   </Section>
 );

@@ -24,7 +24,7 @@ export const Footer: FC = () => (
     <SocialIcons />
     <Box width="0px" height={FOOTER_HEIGHT}>
       <Box width="125px" position="relative" top="-94px" right="120px">
-        <Image src={Cat} />
+        <Image alt="cat image with glasses" src={Cat} />
       </Box>
     </Box>
   </Section>

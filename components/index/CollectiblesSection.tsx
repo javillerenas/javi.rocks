@@ -14,7 +14,7 @@ export const CollectiblesSection: FC = () => (
     <Title as="h1">collectibles ⭐️</Title>
     <VStack align="baseline" color="brand.grey">
       <Text>
-        I'm really passionate about{' '}
+        I’m really passionate about{' '}
         <Box as="span" color="brand.pink" fontWeight="bold">
           web3
         </Box>{' '}
@@ -31,7 +31,7 @@ export const CollectiblesSection: FC = () => (
     </VStack>
     <Box bgColor="brand.blue" borderRadius="10px" px="10px" my="40px">
       <Box as="span" bottom="-7px" position="relative">
-        <Image src={NFTs} />
+        <Image alt="Image of my most precious NFTs" src={NFTs} />
       </Box>
     </Box>
   </Section>

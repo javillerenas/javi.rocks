@@ -45,7 +45,7 @@ export const Hero: FC = () => (
           },
         }}
       >
-        <Image src={Javi} />
+        <Image alt="Javi’s photo" src={Javi} />
         <GasMask />
       </Box>
 
@@ -98,7 +98,10 @@ const GasMask = () => (
     opacity="0"
     transition="all 0.5s ease"
   >
-    <Icon boxSize={['80px', '120px', null, '140px']}>
+    <Icon
+      alt="Bone World’s yellow gas mask"
+      boxSize={['80px', '120px', null, '140px']}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282 268">
         <defs>
           <mask id="a">

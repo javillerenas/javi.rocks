@@ -21,7 +21,11 @@ const GameDev: NextPage = () => (
 
     <Header />
     <Box as="main">
-      <Section bg="brand.heroBackground" direction="column" align="baseline">
+      <Section
+        bg="brand.heroBackground"
+        direction="column"
+        align="baseline"
+      >
         <Title as="h1" fontSize="70px">
           Game dev 👾
         </Title>
@@ -63,7 +67,7 @@ const GameDev: NextPage = () => (
           </Text>
           <Text>
             The idea was simple, combine my passion for dragons with the
-            hack-and-slash genre, and come up with something I'd love to play.
+            hack-and-slash genre, and come up with something I’d love to play.
           </Text>
           <Text>
             I called it{' '}
@@ -108,7 +112,7 @@ const GameDev: NextPage = () => (
 
         {/* What's next */}
         <Title as="h2" mt="100px">
-          What's next? 🚀
+          What’s next? 🚀
         </Title>
         <VStack spacing="5" align="baseline" color="brand.grey" mb="30px">
           <Text>
