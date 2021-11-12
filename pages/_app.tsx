@@ -12,6 +12,7 @@ import type { AppProps } from 'next/app';
 const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
+      <meta charSet="utf-8" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -32,7 +33,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => (
       <link rel="manifest" href="/site.webmanifest" />
       <meta name="apple-mobile-web-app-title" content="javibalvin" />
       <meta name="application-name" content="javibalvin" />
-      <meta name="theme-color" content="#0CBFF9" />
+      <meta name="theme-color" content="#0085FF" />
     </Head>
     <ChakraProvider theme={theme} resetCSS>
       <Component {...pageProps} />
