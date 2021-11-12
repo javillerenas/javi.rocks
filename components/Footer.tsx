@@ -18,7 +18,7 @@ export const Footer: FC = () => (
     bg="brand.blackSecondary"
     mt="0"
   >
-    <Text fontSize="sm" color="brand.greyDarker">
+    <Text fontSize="sm" color="brand.grey">
       Made with 🔥
     </Text>
     <SocialIcons />

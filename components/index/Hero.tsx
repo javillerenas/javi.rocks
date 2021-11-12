@@ -74,7 +74,7 @@ export const Hero: FC = () => (
           currently learning <b>web3</b>, <b>game dev</b>, and{' '}
           <b>3d modeling</b>
         </HeroText>
-        <SocialIcons iconSizes="5" />
+        <SocialIcons />
       </VStack>
     </Stack>
   </Section>

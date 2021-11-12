@@ -12,14 +12,17 @@ const LINKS = [
   {
     iconName: IconName.twitter,
     url: TWITTER_URL,
+    name: 'twitter',
   },
   {
     iconName: IconName.github,
     url: GITHUB_URL,
+    name: 'github',
   },
   {
     iconName: IconName.linkedIn,
     url: LINKEDIN_URL,
+    name: 'linked in',
   },
 ];
 
@@ -27,11 +30,12 @@ interface SocialIcons {
   iconSizes?: IconProps['boxSize'];
 }
 
-export const SocialIcons: FC<SocialIcons> = ({ iconSizes = 4 }) => (
+export const SocialIcons: FC<SocialIcons> = ({ iconSizes = 5 }) => (
   <HStack spacing="3">
-    {LINKS.map(({ iconName, url }) => (
+    {LINKS.map(({ iconName, url, name }) => (
       <ExternalLink key={url} href={url} borderRadius="5px" hideExternalIcon>
         <Icon
+          aria-label={`${name} link`}
           boxSize={iconSizes}
           color="brand.greyDarker"
           name={iconName}
