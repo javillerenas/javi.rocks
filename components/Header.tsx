@@ -17,8 +17,8 @@ const LINKS = [
     url: '/',
   },
   {
-    text: 'gamedev',
-    url: '/game-dev',
+    text: 'games',
+    url: '/games',
   },
 ];
 

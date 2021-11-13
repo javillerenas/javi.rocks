@@ -9,23 +9,27 @@ import { SocialIcons } from './SocialIcons';
 // images
 import Cat from '../public/images/cat.webp';
 
-const FOOTER_HEIGHT = 50;
+const FOOTER_HEIGHT = '60px';
 
 export const Footer: FC = () => (
   <Section
     as="footer"
-    maxHeight={FOOTER_HEIGHT}
+    height={FOOTER_HEIGHT}
     bg="brand.blackSecondary"
     mt="0"
+    position="relative"
   >
-    <Text fontSize="sm" color="brand.grey">
+    <Text flex="1" fontSize="sm" color="brand.grey">
       Made with 🔥
     </Text>
     <SocialIcons />
-    <Box width="0px" height={FOOTER_HEIGHT}>
-      <Box width="125px" position="relative" top="-94px" right="120px">
-        <Image alt="cat image with glasses" src={Cat} />
-      </Box>
+
+    {/* Cat image */}
+    <Box width="125px" position="absolute" bottom="90%" right="5%">
+      <Image alt="cat image with glasses" src={Cat} />
     </Box>
+
+    {/* Box to have social icons centered, but on the right when on mobile */}
+    <Box flex="1" display={['none', 'block']} />
   </Section>
 );

@@ -8,6 +8,7 @@ import { Header } from 'components/Header';
 import { Section } from 'components/Section';
 import { ExternalLink } from 'components/ExternalLink';
 import { Title } from 'components/Title';
+import { Span } from 'components/Span';
 
 const GameDev: NextPage = () => (
   <>
@@ -21,12 +22,8 @@ const GameDev: NextPage = () => (
 
     <Header />
     <Box as="main">
-      <Section
-        bg="brand.heroBackground"
-        direction="column"
-        align="baseline"
-      >
-        <Title as="h1" fontSize="70px">
+      <Section bg="brand.heroBackground" direction="column" align="baseline">
+        <Title fontSize={['60px', '4xl']} lineHeight={['70px', '85px']}>
           Game dev 👾
         </Title>
 
@@ -51,26 +48,26 @@ const GameDev: NextPage = () => (
         <VStack spacing="5" align="baseline" color="brand.grey" mb="30px">
           <Text>
             I have always been fascinated with{' '}
-            <Box as="span" color="brand.green">
-              dragons
-            </Box>
-            . Also, I have always loved the{' '}
+            <Span color="brand.green">dragons</Span>. Also, I have always loved
+            the{' '}
             <Box as="i" color="brand.green">
               hack-and-slash
             </Box>{' '}
             video-game genre.
           </Text>
           <Text>
-            During my first winter break in college, I figured I would try out
-            my skills by building a small video game in{' '}
+            During my first winter break in college{' '}
+            <Span color="brand.greyDarker">(in Dec 2014)</Span>, I figured I
+            would try out my skills by building a small video game in{' '}
             <ExternalLink href="https://scratch.mit.edu/">Scratch</ExternalLink>
+            .
           </Text>
           <Text>
             The idea was simple, combine my passion for dragons with the
             hack-and-slash genre, and come up with something I’d love to play.
           </Text>
           <Text>
-            I called it{' '}
+            After 7 days I came up with what I called{' '}
             <Box as="b" color="brand.green">
               Dragon Slayer
             </Box>
@@ -116,25 +113,17 @@ const GameDev: NextPage = () => (
         </Title>
         <VStack spacing="5" align="baseline" color="brand.grey" mb="30px">
           <Text>
-            In 2021, I have been really interested in{' '}
-            <Box as="span" color="brand.pink">
-              web3
-            </Box>
+            In 2021 I’ve been really interested in{' '}
+            <Span color="brand.pink">web3</Span>.
           </Text>
           <Text>
             I believe the blockchain and smart contracts are technologies that
             will truly bring a paradigm shift to many industries.
           </Text>
           <Text>
-            The one I am really excited about is the paradigm shift in{' '}
-            <Box as="span" color="brand.green">
-              gaming
-            </Box>
-          </Text>
-          .
-          <Text>
-            The idea that gamers will be able to <b>OWN</b> game assets as NFTs
-            is incredible.
+            I am incredibly interested in the changes it will bring to the{' '}
+            <Span color="brand.green">gaming</Span> industry. And I want to be
+            part of that revolution 🔥
           </Text>
         </VStack>
 
@@ -154,8 +143,9 @@ const GameDev: NextPage = () => (
               href="https://www.twitter.com/javibalvinn"
               color="brand.blueLight"
             >
-              @javibalvinn{' '}
+              @javibalvinn
             </ExternalLink>
+            .
           </Text>
         </VStack>
       </Section>

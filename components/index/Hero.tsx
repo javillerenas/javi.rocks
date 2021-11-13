@@ -8,11 +8,14 @@ import { Icon, Text } from '@chakra-ui/react';
 import { Section } from 'components/Section';
 import { SocialIcons } from 'components/SocialIcons';
 import { Planet } from 'components/index/Planet';
+import { Span } from 'components/Span';
 
 // images
 import Javi from '/public/images/javi.webp';
 
 const HERO_MIN_HEIGHT = 550;
+
+const COLOR = 'brand.whiteSecondary';
 
 export const Hero: FC = () => (
   <Section
@@ -66,13 +69,20 @@ export const Hero: FC = () => (
         </Heading>
         <HeroText>
           software engineer focused on{' '}
-          <Box as="span" color="brand.blue">
-            serverless web apps
-          </Box>
+          <Span color="brand.blue">serverless web apps</Span>
         </HeroText>
         <HeroText>
-          currently learning <b>web3</b>, <b>game dev</b>, and{' '}
-          <b>3d modeling</b>
+          currently learning{' '}
+          <Span fontWeight="bold" color={COLOR}>
+            web3,{' '}
+          </Span>
+          <Span fontWeight="bold" color={COLOR}>
+            game dev,{' '}
+          </Span>
+          and{' '}
+          <Span fontWeight="bold" color={COLOR}>
+            3d modeling
+          </Span>{' '}
         </HeroText>
         <SocialIcons />
       </VStack>

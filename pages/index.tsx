@@ -29,9 +29,9 @@ const Home: NextPage = () => (
       <Marquee />
       <ProjectsSection />
       <CareerSection />
+      <PostsSection />
       <CollectiblesSection />
       <CocoSection />
-      <PostsSection />
       <div style={{ height: '200px' }} />
     </Box>
     <Footer />

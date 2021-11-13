@@ -16,6 +16,7 @@ export const ExternalLink: FC<ExternalLink> = ({
 }) => (
   <ChakraLink color="brand.blueLight" {...props} isExternal>
     {children}
+    {!hideExternalIcon && ' '}
     {!hideExternalIcon && <ExternalLinkIcon mx="2px" />}
   </ChakraLink>
 );
