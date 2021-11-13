@@ -5,7 +5,7 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import { GA_TRACKING_ID } from '../lib/gtag';
+import { GA_TRACKING_ID } from 'helpers/constants';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
