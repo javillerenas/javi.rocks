@@ -5,6 +5,7 @@ const FONT =
 
 const colors = {
   brand: {
+    lightBlue: '#8EC5FC',
     blue: '#0085FF',
     blueLight: '#06BDF9',
     black: '#303030',

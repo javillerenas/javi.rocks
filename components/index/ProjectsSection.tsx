@@ -6,13 +6,14 @@ import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { Card } from 'components/Card';
 import { CardLink, CardLinkProps } from 'components/CardLink';
+import { Span } from 'components/Span';
 
 const PROJECTS: CardLinkProps[] = [
   {
-    title: 'Upcoming web3 game 🐲',
+    title: <><Span color="brand.lightBlue">Dragon Slayer</Span> 🐲⚔️</>,
     href: '/games',
-    borderColor: '#8EC5FC',
-    text: 'Learn about my first game and my plans for creating a web3 game',
+    borderColor: 'brand.lightBlue',
+    text: 'Learn about my first hack-and-slash game, and my plans for creating a web3 game',
   },
 ];
 

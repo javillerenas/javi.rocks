@@ -1,11 +1,11 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
 // components
 import { Box, BoxProps, Text, VStack } from '@chakra-ui/layout';
 
 export interface CardProps {
   borderColor?: BoxProps['borderColor'];
-  title: string;
+  title: string | ReactNode;
   text: string;
 }
 export const Card: FC<CardProps> = ({

@@ -24,7 +24,7 @@ const GameDev: NextPage = () => (
         <Text>I have always loved video games.</Text>
         <Text>In my earlier years I loved playing them.</Text>
         <Text>
-          More recently, I am extremely passionate about building them.
+          More recently, I’m extremely passionate about building them.
         </Text>
         <hr />
       </VStack>
@@ -113,7 +113,7 @@ const GameDev: NextPage = () => (
           will truly bring a paradigm shift to many industries.
         </Text>
         <Text>
-          I am incredibly interested in the changes it will bring to the{' '}
+          I’m incredibly interested in the changes it will bring to the{' '}
           <Span color="brand.green">gaming</Span> industry. And I want to be
           part of that revolution 🔥
         </Text>
