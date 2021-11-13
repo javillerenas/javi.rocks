@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { HStack } from '@chakra-ui/layout';
 import { Text } from '@chakra-ui/react';
 
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { Icon, IconName } from 'components/Icon';
 import { InternalLink } from 'components/InternalLink';
 

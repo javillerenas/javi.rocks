@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Box, Text, VStack } from '@chakra-ui/layout';
 
 // components
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { ExternalLink } from 'components/ExternalLink';
 import { Span } from 'components/Span';

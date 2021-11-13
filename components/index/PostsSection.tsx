@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 // components
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { SectionInProgress } from './SectionInProgress';
 import { Title } from 'components/Title';
 

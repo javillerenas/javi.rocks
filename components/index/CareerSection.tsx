@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Text, VStack } from '@chakra-ui/layout';
 
 // components
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { Span } from 'components/Span';
 

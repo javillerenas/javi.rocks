@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Box, Heading, TextProps, VStack, Stack } from '@chakra-ui/layout';
 import { Icon, Text } from '@chakra-ui/react';
 
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { SocialIcons } from 'components/SocialIcons';
 import { Planet } from 'components/index/Planet';
 import { Span } from 'components/Span';

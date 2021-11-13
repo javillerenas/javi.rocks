@@ -4,10 +4,10 @@ import { Text } from '@chakra-ui/react';
 import Image from 'next/image';
 
 // components
-import { Section } from 'components/Section';
-import { SocialIcons } from './SocialIcons';
+import { Section } from 'components/layout/Section';
+import { SocialIcons } from 'components/SocialIcons';
 // images
-import Cat from '../public/images/cat.webp';
+import Cat from 'public/images/cat.webp';
 
 const FOOTER_HEIGHT = '60px';
 

@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 // components
 import { Stack } from '@chakra-ui/layout';
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { Card } from 'components/Card';
 import { CardLink, CardLinkProps } from 'components/CardLink';

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Box, Text } from '@chakra-ui/layout';
 
 // components
-import { Section } from 'components/Section';
+import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 
 // images
