@@ -29,7 +29,7 @@ export const Container: FC<ContainerProps> = ({ children, metaTags }) => {
     <>
       <Head>
         <title>{meta.title}</title>
-        <meta name="description" content={meta.title} />
+        <meta name="description" content={meta.description} />
       </Head>
 
       <Header />

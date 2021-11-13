@@ -9,6 +9,7 @@ import { Title } from 'components/Title';
 import { Span } from 'components/Span';
 
 const META_TAGS = {
+  title: 'Dragon Slayer | Video game designed by Javier Llerenas',
   description: 'Video games designed and developer by Javier Llerenas',
 };
 

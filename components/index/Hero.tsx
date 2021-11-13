@@ -48,7 +48,7 @@ export const Hero: FC = () => (
           },
         }}
       >
-        <Image alt="Javi’s photo" src={Javi} />
+        <Image alt="Javi’s photo" src={Javi} priority placeholder="blur" />
         <GasMask />
       </Box>
 
