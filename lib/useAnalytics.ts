@@ -1,16 +1,15 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { pageview } from 'lib/gtag';
-import { NODE_ENV } from 'helpers/constants';
-import { ENV } from 'helpers/env';
+import { isProd } from 'helpers/env';
 
 export const useAnalytics = () => {
   const router = useRouter();
 
-  // Disable google analytics in dev environment
+  // Disable google analytics when not in production
   // More info: https://developers.google.com/analytics/devguides/collection/gtagjs/user-opt-out
   useEffect(() => {
-    if (NODE_ENV === ENV.dev) {
+    if (!isProd()) {
       //@ts-ignore
       window['ga-disable-GA_MEASUREMENT_ID'] = true;
     }
