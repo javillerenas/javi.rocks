@@ -14,7 +14,7 @@ export const useAnalytics = () => {
       //@ts-ignore
       window['ga-disable-GA_MEASUREMENT_ID'] = true;
     }
-  }, [NODE_ENV]);
+  }, []);
 
   // Track every route change
   useEffect(() => {
