@@ -104,6 +104,7 @@ export const Subscribe: FC<SubscribeProps> = ({
                 variant="filled"
                 disabled={state.status === Form.loading}
                 required
+                pr="120px"
               />
               <InputRightElement w="110px">
                 <Button
