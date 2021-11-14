@@ -7,6 +7,7 @@ import { Section } from 'components/layout/Section';
 import { ExternalLink } from 'components/ExternalLink';
 import { Title } from 'components/Title';
 import { Span } from 'components/Span';
+import { Subscribe } from 'components/Subscribe';
 
 const META_TAGS = {
   title: 'Dragon Slayer | Video game designed by Javier Llerenas',
@@ -140,6 +141,12 @@ const GameDev: NextPage = () => (
           .
         </Text>
       </VStack>
+    </Section>
+    <Section mt="50px">
+      <Subscribe
+        title="Want to be notified about my next game?"
+        description="Subscribe to my newsletter to be notified of major updates"
+      />
     </Section>
   </Container>
 );

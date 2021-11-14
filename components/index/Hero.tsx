@@ -19,6 +19,7 @@ const COLOR = 'brand.whiteSecondary';
 
 export const Hero: FC = () => (
   <Section
+    maxW="1000px"
     minHeight={['450px', null, '450px', HERO_MIN_HEIGHT]}
     bg="brand.heroBackground"
     justify="center"
