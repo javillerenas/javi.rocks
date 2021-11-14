@@ -54,6 +54,7 @@ export const Container: FC<ContainerProps> = ({ children, metaTags }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@javibalvinn" />
         <meta name="twitter:creator" content="@javibalvinn" />
+        <meta name="twitter:image" content={meta.image} />
         {/*
          * open graph tags
          * more info: https://ogp.me/
