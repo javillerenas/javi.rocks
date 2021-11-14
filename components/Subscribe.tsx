@@ -104,9 +104,9 @@ export const Subscribe: FC<SubscribeProps> = ({
                 variant="filled"
                 disabled={state.status === Form.loading}
                 required
-                pr="120px"
+                pr={['10px', '120px']}
               />
-              <InputRightElement w="110px">
+              <InputRightElement w="110px" display={['none', 'block']}>
                 <Button
                   w="110px"
                   disabled={state.status === Form.loading}
@@ -132,6 +132,14 @@ export const Subscribe: FC<SubscribeProps> = ({
                 ⚠ {state.message}
               </FormHelperText>
             )}
+            <Button
+              mt="15px"
+              display={['block', 'none']}
+              disabled={state.status === Form.loading}
+              type="submit"
+            >
+              {state.status === Form.loading ? <Spinner /> : 'Subscribe'}
+            </Button>
           </FormControl>
         </form>
       </VStack>
