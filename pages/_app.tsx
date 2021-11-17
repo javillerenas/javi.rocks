@@ -7,9 +7,11 @@ import { theme } from 'helpers/theme';
 import 'styles/global.css';
 // lib
 import { useAnalytics } from 'lib/useAnalytics';
+import { useEasterEgg } from 'helpers/useEasterEgg';
 
 const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   useAnalytics();
+  useEasterEgg();
 
   return (
     <ChakraProvider theme={theme} resetCSS>
