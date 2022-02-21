@@ -72,19 +72,6 @@ export const Hero: FC = () => (
           software engineer focused on{' '}
           <Span color="brand.blue">serverless web apps</Span>
         </HeroText>
-        <HeroText>
-          currently learning{' '}
-          <Span fontWeight="bold" color={COLOR}>
-            web3,{' '}
-          </Span>
-          <Span fontWeight="bold" color={COLOR}>
-            game dev,{' '}
-          </Span>
-          and{' '}
-          <Span fontWeight="bold" color={COLOR}>
-            3d modeling
-          </Span>{' '}
-        </HeroText>
         <SocialIcons />
       </VStack>
     </Stack>

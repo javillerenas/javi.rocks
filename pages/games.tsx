@@ -99,52 +99,11 @@ const GameDev: NextPage = () => (
           allowFullScreen
         />
       </Box>
-
-      {/* What's next */}
-      <Title as="h2" mt="100px">
-        What’s next? 🚀
-      </Title>
-      <VStack spacing="5" align="baseline" color="brand.grey" mb="30px">
-        <Text>
-          In 2021 I’ve been really interested in{' '}
-          <Span color="brand.pink">web3</Span>.
-        </Text>
-        <Text>
-          I believe the blockchain and smart contracts are technologies that
-          will truly bring a paradigm shift to many industries.
-        </Text>
-        <Text>
-          I’m incredibly interested in the changes it will bring to the{' '}
-          <Span color="brand.green">gaming</Span> industry. And I want to be
-          part of that revolution 🔥
-        </Text>
-      </VStack>
-
-      {/* Benefits of web3 for gaming  */}
-      <Title as="h3" fontSize="30px" mt="30px" color="brand.whiteSecondary">
-        My next video game
-      </Title>
-      <VStack spacing="5" align="baseline" color="brand.grey" mb="30px">
-        <Text>
-          In the next few months, I will be working diligently to bring to life
-          a video game idea that combines RPGs with the world of web3.
-        </Text>
-        <Text>
-          I will be documenting my progression both in here as well as in
-          Twitter – follow me{' '}
-          <ExternalLink
-            href="https://www.twitter.com/javibalvinn"
-            color="brand.blueLight"
-          >
-            @javibalvinn
-          </ExternalLink>
-          .
-        </Text>
-      </VStack>
     </Section>
+
     <Section mt="50px">
       <Subscribe
-        title="Want to be notified about my next game?"
+        title="Want to be notified about future projects?"
         description="Subscribe to my newsletter to be notified of major updates"
       />
     </Section>
