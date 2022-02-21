@@ -27,7 +27,7 @@ export const Header: FC = () => {
 
   return (
     <Section as="header" minHeight={HEADER_HEIGHT} py="10px" mt="0">
-      <HStack spacing="1">
+      {/* <HStack spacing="1">
         {LINKS.map(({ url, text }) => {
           const isActive = url === pathname;
           return (
@@ -42,7 +42,7 @@ export const Header: FC = () => {
             </InternalLink>
           );
         })}
-      </HStack>
+      </HStack> */}
       <HStack spacing="0">
         <Text fontSize="25px" fontWeight="bold" color="brand.whiteSecondary">
           javi
