@@ -33,6 +33,7 @@ export const Marquee: FC = () => {
       whiteSpace="nowrap" // prevents two lines of text
       overflow="hidden" // prevents horizontal scrolling
       height="50px"
+      aria-hidden
     >
       <AnimatedText animation={animation} />
       <AnimatedText animation={animation} />

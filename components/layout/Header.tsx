@@ -47,7 +47,7 @@ export const Header: FC = () => {
         <Text fontSize="25px" fontWeight="bold" color="brand.whiteSecondary">
           javi
         </Text>
-        <Icon name={IconName.logo} boxSize="7" />
+        <Icon name={IconName.logo} boxSize="7" aria-hidden />
       </HStack>
     </Section>
   );
