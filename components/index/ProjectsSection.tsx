@@ -10,10 +10,14 @@ import { Span } from 'components/Span';
 
 const PROJECTS: CardLinkProps[] = [
   {
-    title: <><Span color="brand.lightBlue">Dragon Slayer</Span> 🐲⚔️</>,
+    title: (
+      <>
+        <Span color="brand.lightBlue">Dragon Slayer</Span> 🐲⚔️
+      </>
+    ),
     href: '/games',
     borderColor: 'brand.lightBlue',
-    text: 'Learn about my first hack-and-slash game, and my plans for creating a web3 game',
+    text: 'Learn about the first (and sadly only) game I’ve made – a hack-and-slash 2D game',
   },
 ];
 
