@@ -15,8 +15,6 @@ import Javi from '/public/images/javi.webp';
 
 const HERO_MIN_HEIGHT = 550;
 
-const COLOR = 'brand.whiteSecondary';
-
 export const Hero: FC = () => (
   <Section
     maxW="1000px"
@@ -25,6 +23,7 @@ export const Hero: FC = () => (
     justify="center"
     position="relative"
     mt="0"
+    aria-label="Hero"
   >
     <Planet />
     <Stack
@@ -49,7 +48,8 @@ export const Hero: FC = () => (
           },
         }}
       >
-        <Image alt="Javi’s photo" src={Javi} priority placeholder="blur" />
+        {/* Set as priority to preload bc it's above the fold – for LCP */}
+        <Image priority alt="Picture of Javi" src={Javi} placeholder="blur" />
         <GasMask />
       </Box>
 
@@ -64,9 +64,7 @@ export const Hero: FC = () => (
           fontSize={['60px', '4xl']}
           lineHeight={['70px', '85px']}
         >
-          Javi
-          <br />
-          Llerenas
+          Javi Llerenas
         </Heading>
         <HeroText>
           software engineer focused on{' '}
@@ -89,6 +87,7 @@ const HeroText: FC<TextProps> = (props) => (
 
 const GasMask = () => (
   <Box
+    aria-hidden
     className="gasMask"
     position="absolute"
     top={['10px', '10px', null, '17px']}

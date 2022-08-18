@@ -8,6 +8,7 @@ import { Section } from 'components/layout/Section';
 import { SocialIcons } from 'components/SocialIcons';
 // images
 import Cat from 'public/images/cat.webp';
+import { Span } from 'components/Span';
 
 const FOOTER_HEIGHT = '60px';
 
@@ -20,13 +21,13 @@ export const Footer: FC = () => (
     position="relative"
   >
     <Text flex="1" fontSize="sm" color="brand.grey">
-      Made with 🔥
+      Made with <Span aria-label="passion">🔥</Span>
     </Text>
     <SocialIcons />
 
     {/* Cat image */}
     <Box width="125px" position="absolute" bottom="90%" right="5%">
-      <Image alt="cat image with glasses" src={Cat} />
+      <Image alt="Image of a cat with cool glasses" src={Cat} />
     </Box>
 
     {/* Box to have social icons centered, but on the right when on mobile */}

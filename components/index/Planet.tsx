@@ -72,7 +72,6 @@ to {
 `;
 
 /**
- * @description
  * Animated space hero
  * Inspired by the following codepens:
  *    Planets and moon: https://codepen.io/JonathanBergson/pen/XNWzgy
@@ -97,6 +96,7 @@ export const Planet: FC = () => {
 
   return (
     <Box
+      aria-hidden
       position="absolute"
       zIndex="0"
       width="100%"

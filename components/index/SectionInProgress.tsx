@@ -12,7 +12,7 @@ export const SectionInProgress: FC = () => (
     borderRadius="10px"
     fontSize="20px"
   >
-    <Text>🚧 🚧 🚧</Text>
+    <Text aria-hidden>🚧 🚧 🚧</Text>
     <Text textAlign="center">section in progress...</Text>
   </VStack>
 );

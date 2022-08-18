@@ -1,10 +1,12 @@
 import { FC } from 'react';
 import { Text, VStack } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/react';
 
 // components
 import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { Span } from 'components/Span';
+import { HideFromScreenReader } from 'components/HideFromScreenReader';
 
 const POSITIONS = [
   {
@@ -17,13 +19,14 @@ const POSITIONS = [
         <Span fontWeight="bold" color="brand.green">
           software engineer
         </Span>{' '}
-        in the Seller Products team helping make the user experience amazing.
-        We’re disrupting the commercial real estate market 🔥
+        in the Sell Direct team helping make the user experience amazing. We’re
+        disrupting the commercial real estate market{' '}
+        <HideFromScreenReader>🔥</HideFromScreenReader>
       </>
     ),
   },
   {
-    preText: 'prev: ',
+    inThePast: true,
     company: 'AWS',
     emoji: '☁️',
     years: '2019 - 2021',
@@ -38,26 +41,35 @@ const POSITIONS = [
     ),
   },
   {
-    preText: 'prev: ',
+    inThePast: true,
     years: '2018 - 2019',
     company: 'RedEye Apps',
     emoji: '🟥',
-    text: <>Worked as a SDE intern doing front end things in Vue.js</>,
+    text: 'Worked as a SDE intern doing front end stuff in Vue.js',
   },
 ];
 
 export const CareerSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
-    <Title as="h1">career 💼</Title>
-    <VStack spacing="5" align="baseline" color="brand.grey">
-      {POSITIONS.map(({ company, emoji, text, preText, years }) => (
-        <Text key={company}>
-          {preText}
-          <Span color="brand.white" fontWeight="bold">
-            {company}
-          </Span>{' '}
-          <Span color="brand.greyDarker">({years})</Span> {emoji} – {text}
-        </Text>
+    <Title as="h1">
+      career <HideFromScreenReader>💼</HideFromScreenReader>
+    </Title>
+    <VStack spacing="5" align="baseline" color="brand.grey" as="ol">
+      {POSITIONS.map(({ company, emoji, text, inThePast, years }) => (
+        <Box as="li" key={company}>
+          <Text>
+            {inThePast && (
+              <Box as="abbr" aria-label="previous" display="inline">
+                prev:{' '}
+              </Box>
+            )}
+            <Span color="brand.white" fontWeight="bold">
+              {company}
+            </Span>{' '}
+            <Span color="brand.greyDarker">({years})</Span>{' '}
+            <HideFromScreenReader>{emoji}</HideFromScreenReader> – {text}
+          </Text>
+        </Box>
       ))}
     </VStack>
   </Section>

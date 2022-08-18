@@ -11,7 +11,7 @@ const colors = {
     black: '#303030',
     blackSecondary: '#1F1F1F',
     grey: '#B2B2B2',
-    greyDarker: '#585858',
+    greyDarker: '#718096',
     white: '#F3F3F3',
     pink: '#FF9D9D',
     green: '#38FFAC',

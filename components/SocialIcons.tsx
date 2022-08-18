@@ -3,8 +3,8 @@ import { HStack } from '@chakra-ui/layout';
 
 // components
 import { Icon, IconName } from 'components/Icon';
-import { IconProps } from '@chakra-ui/react';
-import { ExternalLink } from './ExternalLink';
+import { IconProps, Box } from '@chakra-ui/react';
+import { ExternalLink } from 'components/ExternalLink';
 // constants
 import { TWITTER_URL, LINKEDIN_URL, GITHUB_URL } from 'helpers/constants';
 
@@ -31,18 +31,20 @@ interface SocialIcons {
 }
 
 export const SocialIcons: FC<SocialIcons> = ({ iconSizes = 5 }) => (
-  <HStack spacing="3">
+  <HStack spacing="3" as="ul" listStyleType="none">
     {LINKS.map(({ iconName, url, name }) => (
-      <ExternalLink key={url} href={url} borderRadius="5px" hideExternalIcon>
-        <Icon
-          aria-label={`${name} link`}
-          boxSize={iconSizes}
-          color="brand.greyDarker"
-          name={iconName}
-          transition="0.1s ease"
-          _hover={{ color: 'brand.grey' }}
-        />
-      </ExternalLink>
+      <Box as="li" key={url}>
+        <ExternalLink href={url} borderRadius="5px" hideExternalIcon>
+          <Icon
+            aria-label={`${name} link`}
+            boxSize={iconSizes}
+            color="brand.greyDarker"
+            name={iconName}
+            transition="0.1s ease"
+            _hover={{ color: 'brand.grey' }}
+          />
+        </ExternalLink>
+      </Box>
     ))}
   </HStack>
 );

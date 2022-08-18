@@ -2,17 +2,20 @@ import { FC } from 'react';
 
 // components
 import { Stack } from '@chakra-ui/layout';
+import { Box } from '@chakra-ui/react';
 import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { Card } from 'components/Card';
 import { CardLink, CardLinkProps } from 'components/CardLink';
 import { Span } from 'components/Span';
+import { HideFromScreenReader } from 'components/HideFromScreenReader';
 
 const PROJECTS: CardLinkProps[] = [
   {
     title: (
       <>
-        <Span color="brand.lightBlue">Dragon Slayer</Span> 🐲⚔️
+        <Span color="brand.lightBlue">Dragon Slayer</Span>{' '}
+        <HideFromScreenReader>🐲⚔️</HideFromScreenReader>
       </>
     ),
     href: '/games',
@@ -23,15 +26,29 @@ const PROJECTS: CardLinkProps[] = [
 
 export const ProjectsSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
-    <Title as="h2">projects 🚀</Title>
+    <Title as="h2">
+      projects <HideFromScreenReader>🚀</HideFromScreenReader>
+    </Title>
 
-    <Stack spacing="5" direction={['column', null, 'row']}>
+    <Stack
+      spacing="5"
+      direction={['column', null, 'row']}
+      as="ul"
+      listStyleType="none"
+    >
       {PROJECTS.map((project) => (
-        <CardLink key={project.href} {...project} />
+        <Box as="li" key={project.href}>
+          <CardLink {...project} />
+        </Box>
       ))}
       <Card
-        title="Work in progress 🚧 🚧 🚧"
-        text="I have bought a ton of domains. Time to actually work 💪🏽"
+        title={
+          <>
+            Work in progress{' '}
+            <HideFromScreenReader>🚧 🚧 🚧</HideFromScreenReader>
+          </>
+        }
+        text="Cool things coming soon..."
         borderColor="brand.yellow"
       />
     </Stack>
