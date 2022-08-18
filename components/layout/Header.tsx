@@ -43,8 +43,8 @@ export const Header: FC = () => {
           );
         })}
       </HStack> */}
-      <HStack spacing="0">
-        <InternalLink href="/">
+      <HStack as="nav" spacing="0">
+        <InternalLink href="/" display="flex" alignItems="center">
           <Text
             fontSize="25px"
             fontWeight="bold"
