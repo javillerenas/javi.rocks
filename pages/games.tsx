@@ -7,7 +7,7 @@ import { Section } from 'components/layout/Section';
 import { ExternalLink } from 'components/ExternalLink';
 import { Title } from 'components/Title';
 import { Span } from 'components/Span';
-import { Subscribe } from 'components/Subscribe';
+import { HiddenFromScreenReader } from 'components/HiddenFromScreenReader';
 
 const META_TAGS = {
   title: 'Dragon Slayer | Video game designed by Javier Llerenas',
@@ -17,8 +17,8 @@ const META_TAGS = {
 const GameDev: NextPage = () => (
   <Container metaTags={META_TAGS}>
     <Section bg="brand.heroBackground" direction="column" align="baseline">
-      <Title fontSize={['60px', '4xl']} lineHeight={['70px', '85px']}>
-        Game dev 👾
+      <Title as="h1" fontSize={['60px', '4xl']} lineHeight={['70px', '85px']}>
+        Game dev <HiddenFromScreenReader>👾</HiddenFromScreenReader>
       </Title>
 
       <VStack spacing="5" align="baseline" color="brand.grey" mb="70px">
@@ -38,7 +38,9 @@ const GameDev: NextPage = () => (
       direction="column"
       align="baseline"
     >
-      <Title as="h2">My first video game 🐲</Title>
+      <Title as="h2">
+        My first video game <HiddenFromScreenReader>🐲</HiddenFromScreenReader>
+      </Title>
       <VStack spacing="5" align="baseline" color="brand.grey" mb="30px">
         <Text>
           I have always been fascinated with{' '}
@@ -64,7 +66,8 @@ const GameDev: NextPage = () => (
           <Box as="b" color="brand.green">
             Dragon Slayer
           </Box>
-          , and to my surprise it was actually kinda fun! 🙌🏽
+          , and to my surprise it was actually kinda fun!{' '}
+          <HiddenFromScreenReader>🙌🏽</HiddenFromScreenReader>
         </Text>
       </VStack>
 
@@ -101,12 +104,12 @@ const GameDev: NextPage = () => (
       </Box>
     </Section>
 
-    <Section mt="50px">
+    {/* <Section mt="50px">
       <Subscribe
         title="Want to be notified about future projects?"
         description="Subscribe to my newsletter to be notified of major updates"
       />
-    </Section>
+    </Section> */}
   </Container>
 );
 
