@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Box } from '@chakra-ui/layout';
-import { Text } from '@chakra-ui/react';
+import { Text, VisuallyHidden } from '@chakra-ui/react';
 import Image from 'next/image';
 
 // components
@@ -9,6 +9,7 @@ import { SocialIcons } from 'components/SocialIcons';
 // images
 import Cat from 'public/images/cat.webp';
 import { Span } from 'components/Span';
+import { HiddenFromScreenReader } from 'components/HiddenFromScreenReader';
 
 const FOOTER_HEIGHT = '60px';
 
@@ -21,7 +22,8 @@ export const Footer: FC = () => (
     position="relative"
   >
     <Text flex="1" fontSize="sm" color="brand.grey">
-      Made with <Span aria-label="passion">🔥</Span>
+      Made with <HiddenFromScreenReader>🔥</HiddenFromScreenReader>
+      <VisuallyHidden>Passion</VisuallyHidden>
     </Text>
     <SocialIcons />
 
