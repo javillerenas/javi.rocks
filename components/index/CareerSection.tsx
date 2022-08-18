@@ -6,7 +6,7 @@ import { Box } from '@chakra-ui/react';
 import { Section } from 'components/layout/Section';
 import { Title } from 'components/Title';
 import { Span } from 'components/Span';
-import { HideFromScreenReader } from 'components/HideFromScreenReader';
+import { HiddenFromScreenReader } from 'components/HiddenFromScreenReader';
 
 const POSITIONS = [
   {
@@ -21,7 +21,7 @@ const POSITIONS = [
         </Span>{' '}
         in the Sell Direct team helping make the user experience amazing. We’re
         disrupting the commercial real estate market{' '}
-        <HideFromScreenReader>🔥</HideFromScreenReader>
+        <HiddenFromScreenReader>🔥</HiddenFromScreenReader>
       </>
     ),
   },
@@ -52,7 +52,7 @@ const POSITIONS = [
 export const CareerSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
     <Title as="h1">
-      career <HideFromScreenReader>💼</HideFromScreenReader>
+      career <HiddenFromScreenReader>💼</HiddenFromScreenReader>
     </Title>
     <VStack spacing="5" align="baseline" color="brand.grey" as="ol">
       {POSITIONS.map(({ company, emoji, text, inThePast, years }) => (
@@ -67,7 +67,7 @@ export const CareerSection: FC = () => (
               {company}
             </Span>{' '}
             <Span color="brand.greyDarker">({years})</Span>{' '}
-            <HideFromScreenReader>{emoji}</HideFromScreenReader> – {text}
+            <HiddenFromScreenReader>{emoji}</HiddenFromScreenReader> – {text}
           </Text>
         </Box>
       ))}

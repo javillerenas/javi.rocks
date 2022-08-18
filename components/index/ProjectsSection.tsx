@@ -8,14 +8,14 @@ import { Title } from 'components/Title';
 import { Card } from 'components/Card';
 import { CardLink, CardLinkProps } from 'components/CardLink';
 import { Span } from 'components/Span';
-import { HideFromScreenReader } from 'components/HideFromScreenReader';
+import { HiddenFromScreenReader } from 'components/HiddenFromScreenReader';
 
 const PROJECTS: CardLinkProps[] = [
   {
     title: (
       <>
         <Span color="brand.lightBlue">Dragon Slayer</Span>{' '}
-        <HideFromScreenReader>🐲⚔️</HideFromScreenReader>
+        <HiddenFromScreenReader>🐲⚔️</HiddenFromScreenReader>
       </>
     ),
     href: '/games',
@@ -27,7 +27,7 @@ const PROJECTS: CardLinkProps[] = [
 export const ProjectsSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
     <Title as="h2">
-      projects <HideFromScreenReader>🚀</HideFromScreenReader>
+      projects <HiddenFromScreenReader>🚀</HiddenFromScreenReader>
     </Title>
 
     <Stack
@@ -45,7 +45,7 @@ export const ProjectsSection: FC = () => (
         title={
           <>
             Work in progress{' '}
-            <HideFromScreenReader>🚧 🚧 🚧</HideFromScreenReader>
+            <HiddenFromScreenReader>🚧 🚧 🚧</HiddenFromScreenReader>
           </>
         }
         text="Cool things coming soon..."

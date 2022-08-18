@@ -8,12 +8,12 @@ import { Title } from 'components/Title';
 
 // images
 import Coco from '../../public/images/coco.webp';
-import { HideFromScreenReader } from 'components/HideFromScreenReader';
+import { HiddenFromScreenReader } from 'components/HiddenFromScreenReader';
 
 export const CocoSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
     <Title as="h1">
-      coco <HideFromScreenReader>🐶</HideFromScreenReader>
+      coco <HiddenFromScreenReader>🐶</HiddenFromScreenReader>
     </Title>
     <Text color="brand.grey">
       I’m a proud pup-dad of a beautiful malti-poo called Coco
