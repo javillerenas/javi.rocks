@@ -23,7 +23,7 @@ const PROJECTS: CardLinkProps[] = [
 
 export const ProjectsSection: FC = () => (
   <Section py="30px" px={['20px', '50px']} direction="column" align="baseline">
-    <Title as="h1">projects 🚀</Title>
+    <Title as="h2">projects 🚀</Title>
 
     <Stack spacing="5" direction={['column', null, 'row']}>
       {PROJECTS.map((project) => (
