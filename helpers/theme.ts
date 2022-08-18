@@ -18,7 +18,7 @@ const colors = {
     yellow: '#FFD335',
     whiteSecondary: '#DADADA',
     background: '#111618',
-    heroBackground: '#191B21',
+    heroBackground: '#0D1112',
     // gradients
     blueGradient: 'linear-gradient(225deg, #0085FF 0%, #3476D9 100%);',
   },

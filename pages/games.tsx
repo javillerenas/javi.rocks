@@ -25,9 +25,8 @@ const GameDev: NextPage = () => (
         <Text>I have always loved video games.</Text>
         <Text>In my earlier years I loved playing them.</Text>
         <Text>
-          More recently, I’m extremely passionate about building them.
+          More recently, I’ve been passionate about building them.
         </Text>
-        <hr />
       </VStack>
     </Section>
 
