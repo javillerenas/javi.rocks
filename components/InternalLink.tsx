@@ -9,22 +9,28 @@ interface InternalLinkProps extends Omit<ChakraLinkProps, 'href'> {
   href: NextLinkProps['href'];
 }
 
-export const InternalLink: FC<InternalLinkProps> = ({
-  children,
-  href,
-  ...props
-}) => (
+export const GhostInternalLink: FC<
+  InternalLinkProps & { isGhost: boolean }
+> = ({ children, href, isGhost, ...props }) => (
   <NextLink href={href} passHref>
     <ChakraLink
-      p="2"
-      borderRadius="5px"
-      _hover={{
-        textDecor: 'none',
-        backgroundColor: 'brand.blackSecondary',
-      }}
+      _hover={isGhost ? { textDecoration: 'none' } : undefined}
       {...props}
     >
       {children}
     </ChakraLink>
   </NextLink>
+);
+
+export const InternalLink: FC<InternalLinkProps> = (props) => (
+  <GhostInternalLink
+    isGhost={false}
+    p="2"
+    borderRadius="5px"
+    _hover={{
+      textDecor: 'none',
+      backgroundColor: 'brand.blackSecondary',
+    }}
+    {...props}
+  />
 );
