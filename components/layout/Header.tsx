@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 // components
 import { HStack } from '@chakra-ui/layout';
@@ -23,7 +23,7 @@ const LINKS = [
 ];
 
 export const Header: FC = () => {
-  const { pathname } = useRouter();
+  // const { pathname } = useRouter();
 
   return (
     <Section as="header" minHeight={HEADER_HEIGHT} py="10px" mt="0">
@@ -44,10 +44,17 @@ export const Header: FC = () => {
         })}
       </HStack> */}
       <HStack spacing="0">
-        <Text fontSize="25px" fontWeight="bold" color="brand.whiteSecondary">
-          javi
-        </Text>
-        <Icon name={IconName.logo} boxSize="7" aria-hidden />
+        <InternalLink href="/">
+          <Text
+            fontSize="25px"
+            fontWeight="bold"
+            color="brand.whiteSecondary"
+            display="inline"
+          >
+            javi
+          </Text>
+          <Icon name={IconName.logo} boxSize="7" aria-hidden />
+        </InternalLink>
       </HStack>
     </Section>
   );
