@@ -67,7 +67,7 @@ export const Hero: FC = () => (
           Javi Llerenas
         </Heading>
         <HeroText>
-          software engineer focused on{' '}
+          software engineer specializing on{' '}
           <Span color="brand.blue">serverless web apps</Span>
         </HeroText>
         <SocialIcons />
